@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Food Delivery App----Kotlin</string>
+
+
+    <string name="login_to_order_tasty_food_today">Login to order tasty food today!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register_here">Don\'t have an account? <font fgcolor="red">Register Here.</font></string>
+    <string name="signup_to_order_tasty_food_today">SignUp to order tasty food today!</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_login">Already have an account? <font fgcolor="red">Login Here!.</font></string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="_1">1</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="logout">Log Out</string>
+    <string name="order_list">Order List</string>
+    <string name="cart">Cart</string>
+    <string name="CheckOut">Checkout</string>
+    <string name="SubTotal">Subtotal</string>
+    <string name="Vat">Vat</string>
+    <string name="payable">Payable</string>
+    <string name="discount">Discount</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="Total">Payable</string>
+    <string name="post_order">Post Order</string>
+</resources>
