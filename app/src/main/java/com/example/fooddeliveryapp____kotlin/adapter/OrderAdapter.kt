@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.foodey.R
+import com.example.fooddeliveryapp____kotlin.R
 import com.example.foodey.models.Order
 import com.example.foodey.models.OrderedItem
 

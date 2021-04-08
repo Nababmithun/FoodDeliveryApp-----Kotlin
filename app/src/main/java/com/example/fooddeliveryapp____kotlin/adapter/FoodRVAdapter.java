@@ -14,10 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.foodey.R;
+import com.example.fooddeliveryapp____kotlin.R;
 import com.example.foodey.activities.FoodDetailsActivity;
 import com.example.foodey.models.Food;
-import com.example.foodey.util.C;
 
 import org.jetbrains.annotations.NotNull;
 

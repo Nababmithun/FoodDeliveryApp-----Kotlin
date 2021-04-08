@@ -45,7 +45,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityOptionsCompat
-import com.example.foodey.R
+import com.example.fooddeliveryapp____kotlin.R
 
 import org.json.JSONArray
 import org.json.JSONException
@@ -79,11 +79,7 @@ import java.util.TimeZone
 import java.util.concurrent.TimeUnit
 import java.util.regex.Pattern
 
-/**
- * Created by touhidroid on 4/21/16.
- *
- * @author touhidroid
- */
+
 object U {
 
     private val TAG = U::class.java.simpleName
@@ -190,7 +186,10 @@ object U {
                         } else {
                             if (!isIPv4) {
                                 val delim = sAddr.indexOf('%') // drop ip6 zone suffix
-                                return if (delim < 0) sAddr.toUpperCase() else sAddr.substring(0, delim).toUpperCase()
+                                return if (delim < 0) sAddr.toUpperCase() else sAddr.substring(
+                                    0,
+                                    delim
+                                ).toUpperCase()
                             }
                         }
                     }
@@ -206,13 +205,13 @@ object U {
     fun isGPSProviderEnabled(locationManager: LocationManager): Boolean {
         // getting GPS status
         return locationManager
-                .isProviderEnabled(LocationManager.GPS_PROVIDER)
+            .isProviderEnabled(LocationManager.GPS_PROVIDER)
     }
 
     fun isNetProviderEnabled(locationManager: LocationManager): Boolean {
         // getting network status
         return locationManager
-                .isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+            .isProviderEnabled(LocationManager.NETWORK_PROVIDER)
     }
 
     fun isDevicePortrait(res: Resources): Boolean {
@@ -223,19 +222,24 @@ object U {
         if (context == null)
             return false
         val connectivityManager = context
-                .getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+            .getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
         @SuppressLint("MissingPermission")
         val activeNetworkInfo = connectivityManager.activeNetworkInfo
         return activeNetworkInfo != null && activeNetworkInfo.isConnected
     }
 
-    fun isWifiConnected(context: Context): Boolean {
+    fun isWifiConnected(context: Context) {
         val connectivityManager = context
-                .getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+            .getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
         @SuppressLint("MissingPermission")
         val wifiInfo = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
-        return wifiInfo.isConnected
+        if (wifiInfo != null) {
+           // return wifiInfo.isConnected
+        }
     }
+
 
     fun saveBitmapToFile(bmpToSave: Bitmap, directory: File,
                          fileName: String) {
