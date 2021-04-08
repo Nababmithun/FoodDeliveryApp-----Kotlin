@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import com.example.fooddeliveryapp____kotlin.R
 import com.example.foodey.util.obtainViewModel
 import com.example.foodey.viewmodel.SignUpVM
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 
 class SignUpActivity : AppCompatActivity() {

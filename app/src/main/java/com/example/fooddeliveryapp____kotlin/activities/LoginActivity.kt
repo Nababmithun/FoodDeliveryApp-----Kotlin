@@ -9,7 +9,7 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import com.example.foodey.R
+import com.example.fooddeliveryapp____kotlin.R
 import com.example.foodey.data.P
 import com.example.foodey.util.obtainViewModel
 import com.example.foodey.viewmodel.LoginVM
